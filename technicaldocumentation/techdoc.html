@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="techdoc.css" />
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>CC14 LMAO</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li>
+                <a class="nav-link" href="#What_I_knew">What I already knew</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Github_and_VSCode">Github and VSCode</a>
+            </li>
+            <li><a class="nav-link" href="#!DOCTYPE_HTML">!DOCTYPE HTML</a></li>
+            <li><a class="nav-link" href="#CSS">CSS</a></li>
+            <li>
+                <a class="nav-link" href="#MORE_Git">MORE Git</a>
+            </li>
+            <li><a class="nav-link" href="#WSL">WSL</a></li>
+            <li>
+                <a class="nav-link" href="#Flexbox">Flexbox</a>
+            </li>
+            <li><a class="nav-link" href="#Reference">Reference</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <article>
+                <p>
+                    CC14 is the first class on the curriculum to teach web. By now, we've had 
+                    Networking and ERP classes and so going into this class was a change of pace.
+                    In this class, you'd be learning how to use a Github repository to develop
+                    web applications with HTML, CSS, and JavaScript. 
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="What_I_knew">
+            <header>What I knew</header>
+            <article>
+                <p>My only experience with web development before I started this class was
+                    during a Grade 8 subject where we were taught basic HTML and CSS using
+                    Adobe Dreamweaver. We transferred files to and from school using a USB
+                    drive as we didn't have internet on the school computers.
+                </p>
+
+                <p>
+                    Even back then, I was really interested on getting the activities not
+                    only completed, but styled. I learned CSS online even though it still
+                    wasn't necessary, and did a basic portfolio with backgrounds and image
+                    links.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="Github_and_VSCode">
+            <header>Github and VSCode</header>
+            <article>
+                <p>
+                    It's interesting how much my coding style changed after 6 years.
+                    I still mainly used notepad and hadn't touched VSCode. On this class,
+                    our prof made our experience more like actual web projects by making
+                    us use Github, and made our coding speed faster with VSCode and Emmet.
+                </p>
+
+                <p>
+                    Here is how to get a repository up and going.
+                </p>
+                <ol>
+                    <li>Register or Log in to your Github account and make a new repository.</li>
+                    <li>Open VSCode Terminal and change the directory to where you want to place
+                        your local repository clone
+                    </li>
+                    <li>Copy the link to your repository or type it with this template:
+                        <code>git clone https://github.com/<strong>USERNAME</strong>/<strong>REPOSITORY NAME</strong>.git</code>
+                    </li>
+                </ol>
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="!DOCTYPE_HTML">
+            <header>!DOCTYPE HTML</header>
+            <article>
+                <p>
+                    To start making your HTML file, you would need the document type, a head, and a body.
+                    Or with VSCode, you can simply type "!" and press enter. You will get something like this:
+                    <pre><code>&lt;!DOCTYPE html&gt;
+                    &lt;html lang="en"&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="UTF-8"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                        &lt;title&gt;Document&lt;/title&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </code></pre>
+                    
+                    You can start showing text with h or p tags. 
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="CSS">
+            <header>CSS</header>
+            <p>
+                Ready to start adding some <b>pizzazz</b> to your HTML? You can use CSS with either:
+                <ul>
+                    <li>Inline style sheet</li>
+                    <li>Internal style sheet</li>
+                    <li>External style sheet</li>
+                </ul>
+            </p>
+            <h3>Using External Style Sheets</h3>
+            <ul>
+                <li>External style sheets let you specify rules for multiple Web pages</li>
+                <li>These are text documents that contain style rules</li>
+                <li>These are text documents that contain style rules</li>
+            </ul>
+            <p>You can link your css file to your html by placing a link element inside your head</p>
+            <code>&lt;link href=“styles.css” rel=“stylesheet” type=“text/css” /&gt;</code>
+        </section>
+        <section class="main-section" id="MORE_Git">
+            <header>MORE_Git</header>
+            <ol>
+                <li><h3>Add & Commit</h3></li>
+                <p>You may have done both of these commands already, but it can actually be combined into one line. Try this instead, and it will add the file changes and create the commit using the message.</p>
+                <code>$ git commit -am "new project"</code>
+                <li><h3>Amend</h3></li>
+                <p>You can rename your current commit message using the `--amend` flag and write the new message. This will help you with accidental messages.</p>
+                <code>$ git commit --amend -m "Love"</code>
+                <p>You can include additional changes to the current commit before pushing it to the remote repository. To do so, you need to add the file changes and then commit using the `--amend` flag. To retain the previous commit message, simply use the `--no-edit` flag.</p>
+                <code>$ git add . 
+                    $ git commit --amend --no-edit</code>
+            </ol>
+        </section>
+        <section class="main-section" id="WSL">
+            <header>WSL</header>
+            <article>
+                <p>Linux is still the most capable operating system when it comes to professional and enterprise applications, so WSL was created to bring the features of Linux to Windows.</p>
+                <table id="wslTable">
+                    <caption>List of Commands</caption>
+                
+                    <thead>
+                      <tr>
+                        <th>Command</th>
+                        <th>Description</th>
+                      </tr>
+                    </thead>
+                
+                    <tbody>
+                      <tr>
+                        <td>wsl --install</td>
+                        <td>installs Linux on your computer</td>
+                      </tr>
+                      <tr>
+                        <td>wsl</td>
+                        <td>opens Linux in your terminal</td>
+                      </tr>
+                      <tr>
+                        <td>logout or exit</td>
+                        <td>returns to command prompt in windows</td>
+                      </tr>
+                      <tr>
+                        <td>clear</td>
+                        <td>clears the terminal screen</td>
+                      </tr>
+                
+                      <tr>
+                        <th colspan="2">Apache Commands</th> </tr>
+                      <tr>
+                        <td>sudo apt update</td>
+                        <td>updates Linux before installation of Apache</td>
+                      </tr>
+                      <tr>
+                        <td>sudo apt upgrade</td>
+                        <td>upgrades Linux</td>
+                      </tr>
+                      <tr>
+                        <td>sudo apt-get install apache2</td>
+                        <td>installs Apache server</td>
+                      </tr>
+                      <tr>
+                        <td>sudo service apache2 start</td>
+                        <td>starts Apache Server</td>
+                      </tr>
+                      <tr>
+                        <td>sudo service apache2 stop</td>
+                        <td>stops Apache Server</td>
+                      </tr>
+                
+                      <tr>
+                        <th colspan="2">Apache Setup</th>
+                      </tr>
+                      <tr>
+                        <td>sudo nano</td>
+                        <td>open text editor</td>
+                      </tr>
+                      <tr>
+                        <td>sudo chown -R username path/to/working/directory</td>
+                        <td>make folder writable</td>
+                      </tr>
+                      <tr>
+                        <td>sudo nano /etc/apache2/sites-available/000-default.conf</td>
+                        <td>enable site<br>look for document root and change it to your desired folder to run in localhost</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </article>
+        </section>
+        <section class="main-section" id="Flexbox">
+            <header>Flexbox</header>
+            <article>
+                <p>
+                    To move things around the screen and around itself, you would need div and display: flex;.
+                </p>
+                <h3>Properties for the Parent(flex container)<h3>
+                <h3>display</h3>
+                <p>
+                    This defines a flex container; inline or block depending on the given value. It enables a flex context for all its direct children.
+                </p>
+                <code>.container {
+                    display: flex; /* or inline-flex */
+                  }</code>
+                <h3>flex-direction</h3>
+                <p>
+                    This establishes the main-axis, thus defining the direction flex items are placed in the flex container. Flexbox is (aside from optional wrapping) a single-direction layout concept. Think of flex items as primarily laying out either in horizontal rows or vertical columns.
+                </p>
+                <code>.container {
+                    flex-direction: row | row-reverse | column | column-reverse;
+                  }</code>
+                  <ol>
+                    <li>row (default): left to right in ltr; right to left in rtl</li>
+                    <li>row-reverse: right to left in ltr; left to right in rtl</li>
+                    <li>column: same as row but top to bottom</li>
+                    <li>column-reverse: same as row-reverse but bottom to top</li>
+                  </ol>
+                <h3>flex-wrap</h3>
+                <p>
+                    By default, flex items will all try to fit onto one line. You can change that and allow the items to wrap as needed with this property.
+                </p>
+                <code>.container {
+                    flex-wrap: nowrap | wrap | wrap-reverse;
+                  }</code>
+                <h3>flex-flow</h3>
+                <p>
+                    This is a shorthand for the flex-direction and flex-wrap properties, which together define the flex container’s main and cross axes. The default value is row nowrap.
+                </p>
+                <code>.container {
+                    flex-flow: column wrap;
+                  }</code>
+                <h3>justify-content</h3>
+                <p>
+                    This defines the alignment along the main axis. It helps distribute extra free space leftover when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size. It also exerts some control over the alignment of items when they overflow the line.
+                </p>
+                <code>.container {
+                    justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right ... + safe | unsafe;
+                  }</code>
+                <h3>align-items</h3>
+                <p>
+                    This defines the default behavior for how flex items are laid out along the cross axis on the current line. Think of it as the justify-content version for the cross-axis (perpendicular to the main-axis).
+                </p>
+                <code>.container {
+                    align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end + ... safe | unsafe;
+                  }</code>
+                <h3>align-content</h3>
+                <p>
+                    This aligns a flex container’s lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis. Note: This property only takes effect on multi-line flexible containers, where flex-wrap is set to either wrap or wrap-reverse. A single-line flexible container (i.e. where flex-wrap is set to its default value, no-wrap) will not reflect align-content.
+                </p>
+                <code>.container {
+                    align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline + ... safe | unsafe;
+                  }</code>
+            </article>
+        </section>
+        <section class="main-section" id="Reference">
+            <header>Reference</header>
+            <article>
+                <ul>
+                    <li>
+                        All the documentation in this page is taken from
+                        <a href="https://primusr.notion.site/Web-Application-Development-c213cf6dbd834f6f8bcc2d02746209db" target="_blank">CC14</a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>

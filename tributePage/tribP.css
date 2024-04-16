@@ -1,0 +1,148 @@
+html {
+    font-size: 10px;
+  }
+  
+  body {
+    /* Native font stack https://getbootstrap.com/docs/4.2/content/reboot/#native-font-stack */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+      'Helvetica Neue', Arial, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: center;
+    color: #333;
+    margin: 0;
+  }
+  
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+  }
+  
+  @media (max-width: 460px) {
+    h1 {
+      font-size: 3.5rem;
+      line-height: 1.2;
+    }
+  }
+  
+  h2 {
+    font-size: 3.25rem;
+  }
+  
+  a {
+    color: #477ca7;
+  }
+  
+  a:visited {
+    color: #74638f;
+  }
+  
+  #main {
+    margin: 30px 8px;
+    padding: 15px;
+    border-radius: 5px;
+    background: #eee;
+  }
+  
+  @media (max-width: 460px) {
+    #main {
+      margin: 0;
+    }
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+  }
+  .top{
+    display: flex;
+    flex-direction: row;
+  }
+  .top-left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  .description{
+    height: 70%;
+  }
+  .description p{
+    padding: 50px;
+    font-size: large;
+  }
+  .us{
+    display: flex;
+    height: 100px;
+    width: 100%;
+  }
+  .us-desc{
+    justify-content: center;
+    padding-left: 30px;
+  }
+  #us-img{
+    background: white;
+    margin: 0;
+    width: 30%;
+  }
+  #img-div {
+    background: white;
+    padding: 10px;
+    margin: 0;
+    width: 50%;
+  }
+  #image {
+    max-width: 100%;
+  }
+  #img-caption {
+    margin: 15px 0 5px 0;
+  }
+  @media (max-width: 460px) {
+    #img-caption {
+      font-size: 1.4rem;
+    }
+  }
+  
+  #headline {
+    margin: 50px 0;
+    text-align: center;
+  }
+  .tributeInfo{
+    
+  }
+  ul {
+    max-width: 750px;
+    margin: 0 auto 50px auto;
+    text-align: center;
+    line-height: 1.6;
+    list-style-position: inside;
+  }
+  .cos1 , .cos3 , .cos5, .cos7{
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .cos2, .cos4, .cos6{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .cosImg1 , .cosImg2 , .cosImg3 , .cosImg4 , .cosImg5 , .cosImg6, .cosImg7{
+    width: 40%;
+  }
+  .cosLi1 , .cosLi2 , .cosLi3 , .cosLi4 , .cosLi5 , .cosLi6, .cosLi7{
+    padding: 30px;
+    width: 60%;  
+  }
+  li {
+    margin: 16px 0;
+    
+    align-content: center;
+  }
+  
+  blockquote {
+    font-style: italic;
+    max-width: 545px;
+    margin: 0 auto 50px auto;
+    text-align: left;
+  }

@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html{
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url("../mdi/bedoBG.jpg");
+    background-color: black;
+    background-size: 80%;
+    font-family: 'Courier New', monospace; 
+}
+main{
+    display: flex;
+}
+main div{
+    width: 80%;
+}
+h3, h4, p, label, th, td{
+    color: white;
+    text-align: center;
+}
+h1, h2{
+    color: white;
+    text-align: center;
+    line-height: 3;
+}
+    header {
+    display: flex;
+    background-color: #2f2c36;
+    align-items: center;
+}
+.logo{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+nav{
+    height: 30px;
+    display: flex;
+    background-color: #252329;
+    justify-content: center;
+    align-items: center;
+}
+nav a:link, a:visited{
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+}
+nav a:hover, a:active{
+    background-color: #3b383f;
+    text-decoration: none;
+}
+footer{
+    width: 100%;
+    background-color: #2f2c36;
+    text-align: center;
+}
+section{
+    width: 80%;
+    height: 500px;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 80%;
+    height: 400px;
+    align-items: center;
+}
+aside {
+    width: 20%;
+    background-color: #ede9f8;
+    padding-left: 15px;
+    margin-left: 15px;
+}
+table, th, td {
+    background-color: #2f2c36;
+    border: 1px solid white;
+}
+ul{
+    line-height: 2;
+}

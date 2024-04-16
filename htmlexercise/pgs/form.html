@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CC14 HTML exer forms</title>
+        <style>
+            *{
+                padding: 5px;
+            }
+            html{
+            background-color: rgb(37, 36, 41);
+            font-family: 'OCR A Std';
+            }
+            h1, h2, h3, h4, p, label{
+                color: white;
+                text-align: center;
+                list-style-position: inside;
+            }
+            header {
+                display: flex;
+                background-color: #2f2c36;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="../mdi/bedoLogo.png" alt="Albedo Logo" width="60" height="70">
+        </header>
+        <h2>Register an account</h2>
+        <form action="htmlexercise.html">
+            <label for="uname">Username:</label>
+            <input type="text" id="uname" name="uname" required><br>
+            <label for="passw">Password:</label>
+            <input type="text" id="passw" name="passw" minlength="8"><br>
+            <p style="text-align: left;">Sex:</p>
+            <input type="radio" id="msx" name="sex">
+            <label for="msx">Male</label><br>
+            <input type="radio" id="fsx" name="sex">
+            <label for="fsx">Female</label><br><br>
+            <input type="checkbox" id="tnc" name="tnc" required>
+            <label for="tnc">I agree to the <a href="">Terms and Conditions</a> and I will not hold the company liable of any injury or death inflicted on myself</label><br>
+            <input type="checkbox" id="nlt" name="nlt">
+            <label for="nlt">I would not like to receive newsletters and promotions about upcoming products in the future</label><br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
