@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes</title>
+</head>
+
+<body>
+    <style type="text/css">
+        .background {
+        background: lightgrey;
+        }
+        .head {
+            background: rgb(230, 230, 39);
+            margin-left: 40px;
+            width: 30px;
+            height: 30px;
+        }
+        .eyeball {
+        background: white;
+        border-color: black;
+        width: 10px;
+        margin: 15px;
+        }
+        .pupil {
+        color: blue;
+        margin-left: 5px;
+        }
+        .beak {
+            color: rgb(227, 99, 1);
+            margin-left: 30px;
+        }
+        .body {
+            background: rgb(230, 230, 39);
+            width: 70px;
+            height: 40px;
+        }
+        .wing {
+            color: rgb(255, 170, 13);
+            margin-left: 30px;
+        }
+        .drumsticks{
+            display: flex;
+            flex-direction: row;
+        }
+        .drumstick {
+            background: rgb(227, 99, 1);
+            height: 20px;
+            width: 2px;
+            margin-left: 20px;
+        }
+        .drumstick-right {
+            background: rgb(227, 99, 1);
+            height: 20px;
+            width: 2px;
+            margin-left: 20px;
+        }
+    </style>
+    <div class="canvas background">
+        <div class="air background"></div>
+        <div class="head">
+            <div class="eyeball">
+                <span class="pupil">&middot;</span>
+            </div>
+            <div class="beak">
+                <strong>&gt;</strong>
+            </div>
+        </div>
+        <div class="body">
+            <div class="wing">
+                <strong>&lt;
+                </strong>
+            </div>
+        </div>
+        <div class="drumsticks">
+            <div class="drumstick">
+                <br />
+            </div>
+            <div class="drumstick drumstick-right">
+                <br />
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-image: url(htmlexercise/mdi/dgspnwp.png);
+    background-size: cover;
+    font-family: 'Courier New';
+    }
+h1, h2, h3, h4, p, label, th, td{
+    color: white;
+    text-align: center;
+    list-style-position: inside;
+    }
+a:link, a:visited, a:hover, a:active{
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    }   
+header {
+    display: flex;
+    background-color: #2f2c36;
+    align-items: center;
+    padding: 20px;
+}
+.main{
+    display: flex;
+}
+.una{
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;    
+}
+article{
+    margin-bottom: 50px;
+}
+.selfDesc{
+    margin: 50px;
+}
+@keyframes test{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+nav{
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.3), rgba(0,0,0,0));
+    animation: test 5s forwards;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.navImg1, .navImg2 , .navImg3 , .navImg4 , .navImg5 , .navImg6 , .navImg7 , .navImg8{
+    margin: 3px;
+    position: relative;
+    text-align: center;
+    color: white;
+} 
+.navText1 , .navText2 , .navText3 , .navText4 , .navText5 , .navText6 , .navText7 , .navText8{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+#img-div{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+#img-caption {
+    margin: 15px 0 5px 0;
+    color: white;
+}
+#headline{
+    margin: 50px;
+    text-align: center;
+}
+.projects{
+    display: flex;
+    flex-direction: column;
+}
+.projDesc{
+    width: 80%;
+    align-items: center;
+}
+.projIcon{
+    width: 20%;
+}
+.projIcon > img{
+    width: 100px;
+}
+.htmlexer, .finalProj{
+    display: flex;
+    flex-direction: row;
+}
+.cssexer, .typingexer{
+    display: flex;
+    flex-direction: row-reverse ;
+}
